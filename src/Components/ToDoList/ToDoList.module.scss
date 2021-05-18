@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+}
+
+.todo {
+    margin-bottom: 10px;
+    label {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #f3f3f3;
+        box-sizing: border-box;
+        border: 1px solid rgb(173, 173, 173);
+    }
+    i {
+        z-index: 2;
+    }
+    .red_text {
+        color: red;
+    }
+}
