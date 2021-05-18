@@ -8,6 +8,11 @@ type ToDoListPropr = {
 }
 
 const ToDoList: React.FC<ToDoListPropr> = ({ todos, onRemove}) => {
+
+    if (todos.length === 0) {
+        return <p className={`${ToDoListStyles.container}`}>There are no tasks to do</p>
+    }
+
     return (
         <ul>
             {todos.map(todo => {
