@@ -2,12 +2,20 @@ ul {
     list-style-type: none;
 }
 
+.grey {
+    background-color: grey;
+}
+
 .container {
     width: 1140px;
     display: flex;
     margin: 0 auto;
     font-size: 30px;
     justify-content: center;
+    
+    p {
+        color:rgb(173, 173, 173);
+    }
 }
 
 

@@ -3,7 +3,7 @@ import Container from './Components/Container/Container';
 import NavBar from './Components/Navbar/Navbar';
 import ToDoList from './Components/ToDoList/ToDoList';
 import { ITodo } from './interfaces';
-
+import './index.css'
 
 
 function App() {
@@ -18,14 +18,14 @@ function App() {
   }
 
   const removeHandler = (id: number) => {
-    setTodos(prev => prev.filter(todo=> todo.id !== id))
+      setTodos(prev => prev.filter(todo => todo.id !== id))
   }
 
   return (
     <>
       <NavBar />
-      <Container onAdd={addHandler}/>
-      <ToDoList todos={todos} onRemove={removeHandler}/>
+      <Container onAdd={addHandler} />
+      <ToDoList todos={todos} onRemove={removeHandler} />
     </>
   );
 }

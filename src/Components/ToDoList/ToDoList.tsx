@@ -5,12 +5,13 @@ import ToDoListStyles from "./ToDoList.module.scss"
 type ToDoListPropr = {
     todos: ITodo[]
     onRemove: (id: number) => void
+
 }
 
 const ToDoList: React.FC<ToDoListPropr> = ({ todos, onRemove}) => {
 
     if (todos.length === 0) {
-        return <p className={`${ToDoListStyles.container}`}>There are no tasks to do</p>
+        return <div className={`${ToDoListStyles.container}`}><p>There are no tasks to do</p></div>
     }
 
     return (

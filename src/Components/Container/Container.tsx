@@ -28,7 +28,7 @@ const Container: React.FC<ToDoFormProps> = (props) => {
             <div className={ContainerStyle.input_field}>
                 <label htmlFor="title" className={ContainerStyle.active}>
                     Enter a task to be done
-            </label>
+                </label>
                 <input
                     onKeyPress={keyPressHandler}
                     ref={ref}
